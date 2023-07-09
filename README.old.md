@@ -15,3 +15,11 @@ npm install styled-components
 npm install styled-components@latest
 
 yarn add styled-components
+
+# intro
+
+styled-components is a css in js library.
+
+# basic styled component
+
+style a button using styled components.

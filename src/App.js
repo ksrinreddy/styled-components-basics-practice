@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+// you dont need any css files to use styled components, even if there are any exist, it won't affect styled components styles.
+
+import "./App.css";
+// import styled from "styled-components";
+import { StyledButton } from "./components/Button/Button.styled";
+
+
+// const StyledButton = styled.button`
+//   background: blue;
+//   border: 0.1rem solid blue;
+//   color: #fff;
+//   display: inline-block;
+//   padding: 0.5rem 1rem;
+//   cursor: pointer;
+//   transition: all 300ms ease-out;
+// `;
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <button>Button</button>
+      <StyledButton>Styled button</StyledButton>
     </div>
   );
 }
