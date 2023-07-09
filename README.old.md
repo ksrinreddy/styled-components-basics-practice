@@ -37,3 +37,7 @@ while creating styled components, we apply styles on html elements. instead, you
 # polymorphic prop
 
 making one type element (ex. button) to act like another type of element (ex. a) using 'as' prop on the styled-component.
+
+# pseudo classes
+
+applying pseudo classes (ex. hover, focus, etc.) on styled components.

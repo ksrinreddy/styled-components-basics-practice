@@ -11,6 +11,14 @@ export const StyledButton = styled.button`
   padding: 0.5rem 1rem;
   cursor: pointer;
   transition: all 300ms ease-out;
+
+  /* pseudo classes */
+  &:hover {
+    /* inverting properties on hover */
+    background-color: ${(props) =>
+      props.variant !== "outline" ? "#fff" : "blue"};
+    color: ${(props) => (props.variant !== "outline" ? "blue" : "#fff")};
+  }
 `;
 
 // extneding styles - passing another styled-component
