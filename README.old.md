@@ -41,3 +41,7 @@ making one type element (ex. button) to act like another type of element (ex. a)
 # pseudo classes
 
 applying pseudo classes (ex. hover, focus, etc.) on styled components.
+
+# passed props and adding attributes
+
+ex. adding type='submit' on button by passing as props, by using attrs constructor or props function.

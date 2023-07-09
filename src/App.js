@@ -2,7 +2,10 @@
 
 import "./App.css";
 // import styled from "styled-components";
-import StyledButton, { FancyButton } from "./components/Button/Button";
+import StyledButton, {
+  FancyButton,
+  SubmitButton,
+} from "./components/Button/Button";
 
 // const StyledButton = styled.button`
 //   background: blue;
@@ -18,7 +21,8 @@ function App() {
   return (
     <div className="App">
       {/* <button>Button</button> */}
-      <StyledButton>Styled button</StyledButton>
+      {/* passing attributes (ex. type) - not a recommended way (following one) */}
+      <StyledButton type="submit">Styled button</StyledButton>
       <div>
         <br />
       </div>
@@ -27,6 +31,10 @@ function App() {
         <br />
       </div>
       <FancyButton as="a">Fancy Button</FancyButton>
+      <div>
+        <br />
+      </div>
+      <SubmitButton>Submit Button</SubmitButton>
     </div>
   );
 }
