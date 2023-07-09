@@ -2,7 +2,7 @@
 
 import "./App.css";
 // import styled from "styled-components";
-import { StyledButton } from "./components/Button/Button.styled";
+import StyledButton, { FancyButton } from "./components/Button/Button";
 
 // const StyledButton = styled.button`
 //   background: blue;
@@ -22,7 +22,11 @@ function App() {
       <div>
         <br />
       </div>
-      <StyledButton variant="outline">Styled button</StyledButton>
+      <StyledButton variant="outline">Styled Button</StyledButton>
+      <div>
+        <br />
+      </div>
+      <FancyButton as="a">Fancy Button</FancyButton>
     </div>
   );
 }

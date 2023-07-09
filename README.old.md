@@ -27,3 +27,13 @@ style a button using styled components.
 # using props
 
 you can pass props to styled component, and style according to props.
+
+# extending styles
+
+extending the already existing style-component styles to another styled-component and add some variation also. it can also be done using props but it can lead to too many props to keep track of. hence using extend method helps in easy styling.
+
+while creating styled components, we apply styles on html elements. instead, you can also pass other react components(styled component) as element, whose styling is preset, on top of it you can modify based on your requirement. i.e., extending other components styles, and modifying few styles if needed.
+
+# polymorphic prop
+
+making one type element (ex. button) to act like another type of element (ex. a) using 'as' prop on the styled-component.
