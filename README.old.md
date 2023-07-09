@@ -45,3 +45,7 @@ applying pseudo classes (ex. hover, focus, etc.) on styled components.
 # passed props and adding attributes
 
 ex. adding type='submit' on button by passing as props, by using attrs constructor or props function.
+
+# styled components support for animations
+
+setup animations using keyframes from styled components.

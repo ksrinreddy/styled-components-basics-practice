@@ -1,11 +1,12 @@
 // you dont need any css files to use styled components, even if there are any exist, it won't affect styled components styles.
-
+import logo from "./logo.svg";
 import "./App.css";
 // import styled from "styled-components";
 import StyledButton, {
   FancyButton,
   SubmitButton,
 } from "./components/Button/Button";
+import { AnimatedLogo } from "./components/Button/Button.styles";
 
 // const StyledButton = styled.button`
 //   background: blue;
@@ -20,6 +21,8 @@ import StyledButton, {
 function App() {
   return (
     <div className="App">
+      {/* <img src={logo} className='App-logo' alt="logo" /> */}
+      <AnimatedLogo src={logo} />
       {/* <button>Button</button> */}
       {/* passing attributes (ex. type) - not a recommended way (following one) */}
       <StyledButton type="submit">Styled button</StyledButton>
