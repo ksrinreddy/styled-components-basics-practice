@@ -4,7 +4,6 @@ import "./App.css";
 // import styled from "styled-components";
 import { StyledButton } from "./components/Button/Button.styled";
 
-
 // const StyledButton = styled.button`
 //   background: blue;
 //   border: 0.1rem solid blue;
@@ -18,8 +17,12 @@ import { StyledButton } from "./components/Button/Button.styled";
 function App() {
   return (
     <div className="App">
-      <button>Button</button>
+      {/* <button>Button</button> */}
       <StyledButton>Styled button</StyledButton>
+      <div>
+        <br />
+      </div>
+      <StyledButton variant="outline">Styled button</StyledButton>
     </div>
   );
 }

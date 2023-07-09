@@ -23,3 +23,7 @@ styled-components is a css in js library.
 # basic styled component
 
 style a button using styled components.
+
+# using props
+
+you can pass props to styled component, and style according to props.
