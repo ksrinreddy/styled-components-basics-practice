@@ -7,7 +7,7 @@ import StyledButton, {
   SubmitButton,
 } from "./components/Button/Button";
 import { AnimatedLogo, DarkButton } from "./components/Button/Button.styles";
-import { ThemeProvider } from "styled-components";
+import { createGlobalStyle, ThemeProvider } from "styled-components";
 
 // const StyledButton = styled.button`
 //   background: blue;
@@ -28,11 +28,21 @@ const theme = {
     primary: "#fff",
     text: "#000",
   },
+  fontFamily: "Segoe UI",
 };
+
+// global styels
+export const GlobalStyles = createGlobalStyle`
+button {
+  /* font-family: Georgia, 'Times New Roman', Times, serif; */
+  font-family: ${(props) => props.theme.fontFamily};
+}
+`;
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
+      <GlobalStyles />
       <div className="App">
         {/* <img src={logo} className='App-logo' alt="logo" /> */}
         <AnimatedLogo src={logo} />

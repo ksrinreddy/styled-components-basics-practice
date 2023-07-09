@@ -52,4 +52,9 @@ setup animations using keyframes from styled components.
 
 # theming
 
-creating and applying themes using ThemeProvider component from styled components. it wraps App component returned jsx, and provides access to this theme props to all the components(styled) rendered in the App component using contexAPI.
+creating and applying themes using ThemeProvider helper function from styled components. it wraps App component returned jsx, and provides access to this theme props to all the components(styled) rendered in the App component using contexAPI.
+
+# global styles
+
+styled-components provides helper function createGlobalStyle to set global styles for your app.
+common usage: to add base styles, resets.
