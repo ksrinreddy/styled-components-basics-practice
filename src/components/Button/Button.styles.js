@@ -56,3 +56,10 @@ export const AnimatedLogo = styled.img`
   pointer-events: none;
   animation: ${rotate} infinite 20s linear;
 `;
+
+// dark themed button
+export const DarkButton = styled(StyledButton)`
+  background-color: ${(props) => props.theme.dark.primary};
+  border: 2px solid ${(props) => props.theme.dark.primary};
+  color: ${(props) => props.theme.dark.text};
+`;

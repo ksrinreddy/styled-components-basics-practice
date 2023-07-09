@@ -49,3 +49,7 @@ ex. adding type='submit' on button by passing as props, by using attrs construct
 # styled components support for animations
 
 setup animations using keyframes from styled components.
+
+# theming
+
+creating and applying themes using ThemeProvider component from styled components. it wraps App component returned jsx, and provides access to this theme props to all the components(styled) rendered in the App component using contexAPI.

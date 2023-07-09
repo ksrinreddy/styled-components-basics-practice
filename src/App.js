@@ -6,7 +6,8 @@ import StyledButton, {
   FancyButton,
   SubmitButton,
 } from "./components/Button/Button";
-import { AnimatedLogo } from "./components/Button/Button.styles";
+import { AnimatedLogo, DarkButton } from "./components/Button/Button.styles";
+import { ThemeProvider } from "styled-components";
 
 // const StyledButton = styled.button`
 //   background: blue;
@@ -18,27 +19,44 @@ import { AnimatedLogo } from "./components/Button/Button.styles";
 //   transition: all 300ms ease-out;
 // `;
 
+const theme = {
+  dark: {
+    primary: "#000",
+    text: "#fff",
+  },
+  light: {
+    primary: "#fff",
+    text: "#000",
+  },
+};
+
 function App() {
   return (
-    <div className="App">
-      {/* <img src={logo} className='App-logo' alt="logo" /> */}
-      <AnimatedLogo src={logo} />
-      {/* <button>Button</button> */}
-      {/* passing attributes (ex. type) - not a recommended way (following one) */}
-      <StyledButton type="submit">Styled button</StyledButton>
-      <div>
-        <br />
+    <ThemeProvider theme={theme}>
+      <div className="App">
+        {/* <img src={logo} className='App-logo' alt="logo" /> */}
+        <AnimatedLogo src={logo} />
+        {/* <button>Button</button> */}
+        {/* passing attributes (ex. type) - not a recommended way (following one) */}
+        <StyledButton type="submit">Styled button</StyledButton>
+        <div>
+          <br />
+        </div>
+        <StyledButton variant="outline">Styled Button</StyledButton>
+        <div>
+          <br />
+        </div>
+        <FancyButton as="a">Fancy Button</FancyButton>
+        <div>
+          <br />
+        </div>
+        <SubmitButton>Submit Button</SubmitButton>
+        <div>
+          <br />
+        </div>
+        <DarkButton>Dark Button</DarkButton>
       </div>
-      <StyledButton variant="outline">Styled Button</StyledButton>
-      <div>
-        <br />
-      </div>
-      <FancyButton as="a">Fancy Button</FancyButton>
-      <div>
-        <br />
-      </div>
-      <SubmitButton>Submit Button</SubmitButton>
-    </div>
+    </ThemeProvider>
   );
 }
 
